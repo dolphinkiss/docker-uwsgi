@@ -3,7 +3,6 @@ MAINTAINER Peter Lauri <peterlauri@gmail.com>
 
 # update ubuntu
 RUN apt-get update && apt-get upgrade -y && apt-get install -y
-RUN apt-get install -y openssh-client
 
 # setup pip and virtual env
 RUN apt-get install -y python-dev python-setuptools
