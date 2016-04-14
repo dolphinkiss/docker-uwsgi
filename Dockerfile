@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM python:2.7
 MAINTAINER Peter Lauri <peterlauri@gmail.com>
 
 # update ubuntu
