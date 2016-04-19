@@ -1,6 +1,10 @@
 FROM python:2.7
 MAINTAINER Peter Lauri <peterlauri@gmail.com>
 
+ENV LANG en_US.utf8
+ENV LC_ALL en_US.UTF-8
+ENV LC_LANG en_US.UTF-8
+
 # update ubuntu
 RUN apt-get update && apt-get upgrade -y && apt-get install -y
 # dependencies
