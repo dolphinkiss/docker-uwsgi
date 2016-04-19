@@ -14,7 +14,7 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8 \
 # - curl:			to download stuff for builds
 RUN apt-get update && apt-get install -y \
     ca-certificates libssl1.0.0 \
-    openssh-client python-dev libpq-dev git curl
+    openssh-client python-dev libpq-dev git curl && rm -rf /var/lib/apt/lists/*
 
 # installing pip
 RUN set -eEx \
